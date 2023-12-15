@@ -245,6 +245,8 @@ body.nav-active { overflow: hidden; }
     border: 3px solid var(--white);
     border-block-end: 45px;
     animation: rotate360 1s linear infinite;
+    margin-top: 90%;
+    margin-left: 372%;
 }
 
 @keyframes rotate360 {
@@ -266,6 +268,8 @@ body.nav-active { overflow: hidden; }
     -webkit-background-clip: text;
     -webkit-text-stroke: 0.5px var(--eerie-black-3);
     animation: loadingText linear 2s infinite;
+    margin-top: 15%;
+    margin-left: 372%;
 }
 
 @keyframes loadingText {
