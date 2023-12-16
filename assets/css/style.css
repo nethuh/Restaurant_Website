@@ -380,11 +380,9 @@ body.nav-active { overflow: hidden; }
   #HEADER
 \*-----------------------------------*/
 
-.navbar,
-.overlay,
-.header .btn{ display: none}
+.header .btn { display: none; }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -396,7 +394,7 @@ body.nav-active { overflow: hidden; }
     transition: var(--transition-1);
 }
 
-.header.active{
+.header.active {
     padding-block: 20px;
     background-color: var(--eerie-black-4);
     border-color: var(--black-alpha-15);
@@ -407,7 +405,7 @@ body.nav-active { overflow: hidden; }
     transition-delay: 250ms;
 }
 
-.header .container{
+.header .container {
     padding-inline: 20px;
     display: flex;
     justify-content: space-between;
@@ -420,12 +418,12 @@ body.nav-active { overflow: hidden; }
     padding-inline-end: 0;
 }
 
-.nav-open-btn .line{
+.nav-open-btn .line {
     width: 30px;
     height: 2px;
     background-color: var(--white);
     margin-block: 4px;
-    transform-origin:left;
+    transform-origin: left;
     animation: menuBtn 400ms ease-in-out alternate infinite;
 }
 
@@ -438,7 +436,7 @@ body.nav-active { overflow: hidden; }
 
 .nav-open-btn .line-3 { animation-delay: 300ms; }
 
-.navbar{
+.navbar {
     position: fixed;
     background-color: var(--smoky-black-1);
     top: 0;
@@ -454,12 +452,12 @@ body.nav-active { overflow: hidden; }
     transition: var(--transition-2);
 }
 
-.navbar.active{
+.navbar.active {
     visibility: visible;
     transform: translateX(360px);
 }
 
-.navbar .close-btn{
+.navbar .close-btn {
     color: var(--white);
     border: 1px solid currentColor;
     padding: 4px;
@@ -477,6 +475,31 @@ body.nav-active { overflow: hidden; }
     margin-inline: auto;
     margin-block-end: 60px;
 }
+
+.navbar-list {
+    border-block-end: 1px solid var(--white-alpha-20);
+    margin-block-end: 100px;
+}
+
+.navbar-item { border-block-start: 1px solid var(--white-alpha-20); }
+
+.navbar-link {
+    position: relative;
+    font-size: var(--fontSize-label-2);
+    text-transform: uppercase;
+    padding-block: 10px;
+    max-width: unset;
+}
+
+.navbar-link::after { display: none; }
+
+.navbar-link .span { transition: var(--transition-1); }
+
+.navbar-link:is(:hover, :focus-visible, .active) .span {
+    color: var(--gold-crayola);
+    transform: translateX(20px);
+}
+
 
 /*-----------------------------------*\
   #HERO
