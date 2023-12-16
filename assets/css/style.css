@@ -245,6 +245,13 @@ body.nav-active { overflow: hidden; }
     transition: var(--transition-2);
 }
 
+.hover-underline:is(:hover, :focus-visible)::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.contact-number::after { bottom: -5px; }
+
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
