@@ -206,6 +206,44 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
+.container{
+    padding-inline: 16px;
+}
+
+.separator {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--gold-crayola);
+    transform: rotate(45deg);
+}
+
+.contact-label{
+    font-weight: var(--weight-bold);
+}
+
+.contact-number{
+    color: var(--gold-crayola);
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+.hover-underline{
+    position: relative;
+    max-width: max-content;
+}
+
+.hover-underline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    border-block: 1px solid var(--gold-crayola);
+    transform: scaleX(0.2);
+    opacity: 0;
+    transition: var(--transition-2);
+}
 
 /*-----------------------------------*\
   #PRELOAD
