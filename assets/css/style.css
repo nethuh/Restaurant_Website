@@ -283,6 +283,9 @@ body.nav-active { overflow: hidden; }
   #TOPBAR
 \*-----------------------------------*/
 
+.topbar {
+    display: none;
+}
 
 /*-----------------------------------*\
   #HEADER
