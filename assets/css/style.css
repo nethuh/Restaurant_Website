@@ -444,18 +444,14 @@ body.nav-active {
     z-index: 1;
 }
 
-.bg-black-10 {
-    background-color: var(--smoky-black-2)
-}
+.bg-black-10 { background-color: var(--smoky-black-2); }
 
 .grid-list {
     display: grid;
     gap: 40px;
 }
 
-.hover\:shine {
-    position: relative;
-}
+.hover\:shine { position: relative; }
 
 .hover\:shine::after {
     content: "";
@@ -473,13 +469,13 @@ body.nav-active {
     transition: var(--transition-3);
 }
 
-.img-holder{
+.img-holder {
     aspect-ratio: var(--width) / var(--height);
     overflow: hidden;
     background-color: var(--eerie-black-4);
 }
 
-.btn-text{
+.btn-text {
     color: var(--gold-crayola);
     padding-block-end: 4px;
     margin-inline: auto;
@@ -489,16 +485,15 @@ body.nav-active {
     transition: var(--transition-1);
 }
 
-.btn-text:is(:hover, :focus-visible){
-    color: var(--white);
-}
+.btn-text:is(:hover, :focus-visible) { color: var(--white); }
 
-.shape{
+.shape {
     display: none;
     position: absolute;
     max-width: max-content;
     z-index: -1;
 }
+
 
 
 /*-----------------------------------*\
@@ -941,23 +936,19 @@ body.nav-active {
   #SERVICE
 \*-----------------------------------*/
 
-.service .section-title{
-    margin-block-end: 16px;
-}
+.service .section-title { margin-block-end: 16px; }
 
-.service .section-text{
-    margin-block-end:40px ;
-}
+.service .section-text { margin-block-end: 40px; }
 
-.service-card{overflow: hidden}
+.service-card { overflow: hidden; }
 
-.service-card .has-before{
+.service-card .has-before {
     padding-block: 30px;
     margin-block-end: 26px;
     z-index: 1;
 }
 
-.service-card .has-before::before{
+.service-card .has-before::before {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
