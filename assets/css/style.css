@@ -991,6 +991,23 @@ body.nav-active {
   #ABOUT
 \*-----------------------------------*/
 
+.about .section-text { margin-block: 15px 30px; }
+
+.about .btn {
+    margin-inline: auto;
+    margin-block-start: 26px;
+}
+
+.about .container {
+    display: grid;
+    gap: 120px;
+}
+
+.about-banner {
+    position: relative;
+    margin-block-end: 120px;
+}
+
 
 /*-----------------------------------*\
   #SPECIAL DISH
