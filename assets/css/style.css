@@ -969,6 +969,13 @@ body.nav-active {
     transition-delay: 300ms;
 }
 
+.service-card .card-banner { transition: var(--transition-2); }
+
+.service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05); }
+
+.service .card-title { margin-block-end: 12px; }
+
+
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
