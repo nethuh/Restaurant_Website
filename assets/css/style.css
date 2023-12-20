@@ -1008,6 +1008,35 @@ body.nav-active {
     margin-block-end: 120px;
 }
 
+.about-banner > .w-100 { padding-inline-start: 50px; }
+
+.about .abs-img { position: absolute; }
+
+.about .abs-img::before { z-index: -1; }
+
+.about .abs-img-1 {
+    bottom: -120px;
+    left: 0;
+    width: 150px;
+    padding-block: 50px;
+}
+
+.about .abs-img-2 {
+    top: -65px;
+    right: 0;
+    overflow: hidden;
+}
+
+.about .abs-img-1::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    background-image: url('../images/img-pattern.svg');
+    background-repeat: repeat;
+}
+
 
 /*-----------------------------------*\
   #SPECIAL DISH
