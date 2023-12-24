@@ -523,6 +523,7 @@ body.nav-active {
     place-content: center;
     justify-items: center;
     transition: var(--transition-2);
+    display: none;
 }
 
 .preload > * {
