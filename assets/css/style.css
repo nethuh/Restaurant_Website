@@ -519,13 +519,13 @@ body.nav-active {
     }
 }
 
-.has-bg-image{
+.has-bg-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.input-field{
+.input-field {
     background-color: var(--eerie-black-2);
     color: var(--white);
     height: 56px;
@@ -536,16 +536,20 @@ body.nav-active {
     transition: border-color var(--transition-2);;
 }
 
-.input-field::placeholder { color: inherit; }
+.input-field::placeholder {
+    color: inherit;
+}
 
-.input-field:focus { border-color: var(--gold-crayola); }
+.input-field:focus {
+    border-color: var(--gold-crayola);
+}
 
-.icon-wrapper{
+.icon-wrapper {
     position: relative;
     margin-block-end: 20px;
 }
 
-.icon-wrapper .input-field{
+.icon-wrapper .input-field {
     margin-block-end: 0;
     padding-inline-start: 40px;
     appearance: none;
@@ -561,10 +565,13 @@ body.nav-active {
     pointer-events: none;
 }
 
-.icon-wrapper ion-icon:first-child { left: 15px; }
+.icon-wrapper ion-icon:first-child {
+    left: 15px;
+}
 
-.icon-wrapper ion-icon:last-child { right: 10px; }
-
+.icon-wrapper ion-icon:last-child {
+    right: 10px;
+}
 
 
 /*-----------------------------------*\
@@ -1245,12 +1252,12 @@ body.nav-active {
     width: 70%;
 }
 
-.menu .shape-2{
+.menu .shape-2 {
     top: 0;
     left: 0;
 }
 
-.menu .shape-3{
+.menu .shape-3 {
     bottom: 0;
     right: 0;
 }
@@ -1259,25 +1266,27 @@ body.nav-active {
   #TESTIMONIALS
 \*-----------------------------------*/
 
-.testi{
+.testi {
     padding-block-end: 340px;
     position: static;
 }
 
-.testi .quote{
-   font-size: 7rem;
+.testi .quote {
+    font-size: 7rem;
     font-family: var(--fontFamily-forum);
     line-height: 0.7em;
 }
 
-.testi .wrapper{
+.testi .wrapper {
     display: flex;
     justify-content: center;
     gap: 2px;
     margin-block: 40px 50px;
 }
 
-.testi .separator { animation: rotate360 15s linear infinite; }
+.testi .separator {
+    animation: rotate360 15s linear infinite;
+}
 
 .profile .img {
     margin-inline: auto;
@@ -1285,7 +1294,7 @@ body.nav-active {
     margin-block-end: 15px;
 }
 
-.testi .profile-name{
+.testi .profile-name {
     color: var(--gold-crayola);
     font-weight: var(--weight-bold);
     text-transform: uppercase;
@@ -1304,33 +1313,45 @@ body.nav-active {
     margin-block-end: 40px;
 }
 
-.form-text .link{
+.form-text .link {
     display: inline;
     color: var(--gold-crayola);
 }
 
-.form-right .headline-1 { margin-block-end: 40px; }
+.form-right .headline-1 {
+    margin-block-end: 40px;
+}
 
-.form-right .contact-label { margin-block-end: 5px; }
+.form-right .contact-label {
+    margin-block-end: 5px;
+}
 
-.form-right .separator { margin: 20px auto; }
+.form-right .separator {
+    margin: 20px auto;
+}
 
 .form-right .body-4 {
     color: var(--quick-silver);
     line-height: var(--lineHeight-3);
 }
 
-.form-right .body-4:not(:last-child) { margin-block-end: 25px; }
+.form-right .body-4:not(:last-child) {
+    margin-block-end: 25px;
+}
 
 .form-left,
-.form-right { padding: 40px 20px 30px; }
+.form-right {
+    padding: 40px 20px 30px;
+}
 
 .input-field[type="date"] {
     text-transform: uppercase;
     padding-inline-end: 10px;
 }
 
-.input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
+.input-field[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
 
 textarea.input-field {
     resize: none;
@@ -1353,17 +1374,15 @@ textarea.input-field {
   #FEATURES
 \*-----------------------------------*/
 
-.features .section-title {
-    margin-block-end: 40px;
-}
+.features .section-title { margin-block-end: 40px; }
 
-.feature-card {padding: 30px 20px 40px}
+.feature-card { padding: 30px 20px 40px; }
 
-.feature-item:nth-child(2n+1) .feature-card{ background-color: var(--eerie-black-3);}
+.feature-item:nth-child(2n+1) .feature-card { background-color: var(--eerie-black-3); }
 
-.feature-item:nth-child(2n) .feature-card{ background-color: var(--smoky-black-3)}
+.feature-item:nth-child(2n) .feature-card { background-color: var(--smoky-black-3); }
 
-.feature-card .card-icon{
+.feature-card .card-icon {
     max-width: max-content;
     margin-inline: auto;
     transition: var(--transition-2);
@@ -1373,6 +1392,10 @@ textarea.input-field {
 
 .feature-card .card-title { margin-block: 20px; }
 
+.feature-card .card-text {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-6);
+}
 
 /*-----------------------------------*\
   #EVENT
