@@ -444,14 +444,18 @@ body.nav-active {
     z-index: 1;
 }
 
-.bg-black-10 { background-color: var(--smoky-black-2); }
+.bg-black-10 {
+    background-color: var(--smoky-black-2);
+}
 
 .grid-list {
     display: grid;
     gap: 40px;
 }
 
-.hover\:shine { position: relative; }
+.hover\:shine {
+    position: relative;
+}
 
 .hover\:shine::after {
     content: "";
@@ -485,7 +489,9 @@ body.nav-active {
     transition: var(--transition-1);
 }
 
-.btn-text:is(:hover, :focus-visible) { color: var(--white); }
+.btn-text:is(:hover, :focus-visible) {
+    color: var(--white);
+}
 
 .shape {
     display: none;
@@ -494,17 +500,24 @@ body.nav-active {
     z-index: -1;
 }
 
-.w-100 { width: 100%; }
+.w-100 {
+    width: 100%;
+}
 
-.move-anim { animation: move 5s linear infinite; }
+.move-anim {
+    animation: move 5s linear infinite;
+}
 
 @keyframes move {
     0%,
-    100% { transform: translateY(0); }
+    100% {
+        transform: translateY(0);
+    }
 
-    50% { transform: translateY(30px); }
+    50% {
+        transform: translateY(30px);
+    }
 }
-
 
 
 /*-----------------------------------*\
@@ -948,11 +961,17 @@ body.nav-active {
   #SERVICE
 \*-----------------------------------*/
 
-.service .section-title { margin-block-end: 16px; }
+.service .section-title {
+    margin-block-end: 16px;
+}
 
-.service .section-text { margin-block-end: 40px; }
+.service .section-text {
+    margin-block-end: 40px;
+}
 
-.service-card { overflow: hidden; }
+.service-card {
+    overflow: hidden;
+}
 
 .service-card .has-before {
     padding-block: 30px;
@@ -981,18 +1000,26 @@ body.nav-active {
     transition-delay: 300ms;
 }
 
-.service-card .card-banner { transition: var(--transition-2); }
+.service-card .card-banner {
+    transition: var(--transition-2);
+}
 
-.service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05); }
+.service-card:is(:hover, :focus-within) .card-banner {
+    transform: scale(1.05);
+}
 
-.service .card-title { margin-block-end: 12px; }
+.service .card-title {
+    margin-block-end: 12px;
+}
 
 
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
 
-.about .section-text { margin-block: 15px 30px; }
+.about .section-text {
+    margin-block: 15px 30px;
+}
 
 .about .btn {
     margin-inline: auto;
@@ -1009,11 +1036,17 @@ body.nav-active {
     margin-block-end: 120px;
 }
 
-.about-banner > .w-100 { padding-inline-start: 50px; }
+.about-banner > .w-100 {
+    padding-inline-start: 50px;
+}
 
-.about .abs-img { position: absolute; }
+.about .abs-img {
+    position: absolute;
+}
 
-.about .abs-img::before { z-index: -1; }
+.about .abs-img::before {
+    z-index: -1;
+}
 
 .about .abs-img-1 {
     bottom: -120px;
@@ -1050,9 +1083,11 @@ body.nav-active {
   #SPECIAL DISH
 \*-----------------------------------*/
 
-.special-dish-content{ padding-block: 70px;}
+.special-dish-content {
+    padding-block: 70px;
+}
 
-.special-dish .abs-img{
+.special-dish .abs-img {
     margin-inline: auto;
     margin-block: 12px;
 }
@@ -1061,7 +1096,7 @@ body.nav-active {
     margin-block: 16px 40px;
 }
 
-.special-dish-content .wrapper{
+.special-dish-content .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1074,17 +1109,55 @@ body.nav-active {
     color: var(--davys-grey);
 }
 
-.special-dish-content .span{
+.special-dish-content .span {
     color: var(--gold-crayola);
 }
 
-.special-dish .btn{ margin-inline: auto;}
-
+.special-dish .btn {
+    margin-inline: auto;
+}
 
 
 /*-----------------------------------*\
   #MENU
 \*-----------------------------------*/
+
+.menu .section-title {
+    margin-block-end: 40px;
+}
+
+.menu .grid-list {
+    margin-block-end: 50px;
+}
+
+.menu-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hover\:card .card-banner {
+    background-color: var(--gold-crayola);
+}
+
+.hover\:card .card-banner .img-cover{
+    transition: var(--transition-2);
+}
+
+.hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.menu-card .card-banner {
+    flex-shrink: 0;
+    border-radius: var(--radius-24);
+}
+
+.menu-card .card-title { transition: var(--transition-1); }
+
+.menu-card .card-title:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+
 
 
 /*-----------------------------------*\
