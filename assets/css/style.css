@@ -1467,7 +1467,9 @@ textarea.input-field {
   #FOOTER
 \*-----------------------------------*/
 
-.footer-top { margin-block-end: 70px; }
+.footer-top {
+    margin-block-end: 70px;
+}
 
 .footer-brand {
     position: relative;
@@ -1485,11 +1487,15 @@ textarea.input-field {
     background-image: url("../images/footer-form-pattern.svg");
 }
 
-.footer-brand::before { left: 0; }
+.footer-brand::before {
+    left: 0;
+}
 
-.footer-brand::after { right: 0; }
+.footer-brand::after {
+    right: 0;
+}
 
-.footer-brand .logo{
+.footer-brand .logo {
     max-width: max-content;
     margin-inline: auto;
     margin-block-end: 40px;
@@ -1500,12 +1506,14 @@ textarea.input-field {
     line-height: var(--lineHeight-3);
 }
 
-.footer-brand .contact-link{
+.footer-brand .contact-link {
     margin-block: 6px;
     transition: var(--transition-1);
 }
 
-.footer-brand .contact-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+.footer-brand .contact-link:is(:hover, :focus-visible) {
+    color: var(--gold-crayola);
+}
 
 .footer-brand .wrapper {
     display: flex;
@@ -1514,18 +1522,26 @@ textarea.input-field {
     margin-block: 40px 25px;
 }
 
-.footer-brand .separator { animation: rotate360 15s linear infinite; }
+.footer-brand .separator {
+    animation: rotate360 15s linear infinite;
+}
 
-.footer-brand .label-1 { margin-block-end: 30px; }
+.footer-brand .label-1 {
+    margin-block-end: 30px;
+}
 
 .footer-brand .label-1 .span {
     display: inline;
     color: var(--white);
 }
 
-.footer-brand .icon-wrapper .input-field { cursor: text; }
+.footer-brand .icon-wrapper .input-field {
+    cursor: text;
+}
 
-.footer-brand .btn { min-width: 100%; }
+.footer-brand .btn {
+    min-width: 100%;
+}
 
 .footer-list {
     display: grid;
@@ -1541,10 +1557,19 @@ textarea.input-field {
     transition: var(--transition-1);
 }
 
-.footer-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+.footer-link:is(:hover, :focus-visible) {
+    color: var(--gold-crayola);
+}
 
-.copyright{
+.copyright {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-3);
+}
 
+.copyright .link{
+    display: inline;
+    color: var(--gold-crayola);
+    text-decoration: underline ;
 }
 
 /*-----------------------------------*\
