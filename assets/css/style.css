@@ -1322,6 +1322,32 @@ body.nav-active {
 
 .form-right .body-4:not(:last-child) { margin-block-end: 25px; }
 
+.form-left,
+.form-right { padding: 40px 20px 30px; }
+
+.input-field[type="date"] {
+    text-transform: uppercase;
+    padding-inline-end: 10px;
+}
+
+.input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
+
+textarea.input-field {
+    resize: none;
+    height: 140px;
+    padding-block: 20px;
+    line-height: var(--lineHeight-1);
+}
+
+.form-left .btn {
+    max-width: 100%;
+    width: 100%;
+}
+
+.form-right {
+    background-repeat: repeat;
+    background-position: top left;
+}
 
 /*-----------------------------------*\
   #FEATURES
