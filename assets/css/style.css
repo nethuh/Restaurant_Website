@@ -1689,6 +1689,74 @@ textarea.input-field {
   * HEADER
   */
 
+.header{
+    top: 51px;
+}
+
+.header.active{
+    top: 0;
+}
+
+.header .btn{
+    display: block;
+    margin-inline-start: auto;
+}
+
+    /**
+      * HERO
+      */
+
+    .hero-btn { transform: scale(0.7);}
+
+    /**
+  * SERVICE
+  */
+
+    .service .container {
+        max-width: 420px;
+        margin-inline: auto;
+    }
+
+    /**
+  * ABOUT
+  */
+
+    .about .container { gap: 80px; }
+
+    .about-banner > .w-100 { padding-inline-start: 90px; }
+
+    .about .abs-img-1 { width: 285px; }
+
+    .about .contact-number { --fontSize-body-1: 2.4rem; }
+
+    /**
+  * MENU
+  */
+
+    .menu-card .title-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu-card .badge { margin-block-start: 0; }
+
+    .menu-card .span {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+    }
+
+    .menu-card .span::before {
+        content: "";
+        height: 6px;
+        flex-grow: 1;
+        border-block: 1px solid var(--white-alpha-20);
+    }
+
 
 
 }
