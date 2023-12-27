@@ -2181,5 +2181,68 @@ textarea.input-field {
         transform: scale(1);
     }
 
+    /**
+       * SERVICE
+       */
+
+    .service .grid-list { gap: 150px; }
+
+    .service .grid-list li:nth-child(2n+1) { transform: translateY(-160px); }
+
+    .service .section-text { margin-block-end: 75px; }
+
+
+
+    /**
+     * ABOUT
+     */
+
+    .about { padding-block: 170px 100px; }
+
+
+
+    /**
+     * SPECIAL DISH
+     */
+
+    .special-dish-content {
+        padding: 225px 120px;
+        padding-inline-end: 0;
+    }
+
+    .special-dish-content .container {
+        max-width: 460px;
+        margin-inline: 0;
+    }
+
+
+
+    /**
+     * MENU
+     */
+
+    .menu .grid-list {
+        gap: 55px 200px;
+        margin-block-end: 55px;
+    }
+
+
+
+    /**
+     * TESTIMONIALS
+     */
+
+    .form-left,
+    .form-right { padding: 75px 60px; }
+
+
+
+
+    /**
+     * FEATURES
+     */
+
+    .features .grid-list { grid-template-columns: repeat(4, 1fr); }
+
 
 }
