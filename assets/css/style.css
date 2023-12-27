@@ -2005,5 +2005,62 @@ textarea.input-field {
     }
 
 
+    /**
+       * MENU
+       */
 
+    .menu .grid-list {
+        position: relative;
+        column-gap: 90px;
+    }
+
+    .menu .grid-list::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        border-inline-start: 1px solid var(--white-alpha-20);
+    }
+
+
+
+    /**
+     * TESTIMONIALS
+     */
+
+    .testi-text {
+        max-width: 910px;
+        margin-inline: auto;
+    }
+
+
+
+    /**
+     * RESERVATION
+     */
+
+    .reservation-form {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+    }
+
+
+
+    /**
+     * FOOTER
+     */
+
+    .footer .grid-list {
+        grid-template-columns: 0.45fr 1fr 0.45fr;
+        align-items: center;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+        order: 1;
+        padding-block: 100px;
+    }
+
+    .footer-list:last-child { order: 2; }
 }
