@@ -1863,4 +1863,27 @@ textarea.input-field {
         transform: translateY(-50%) rotate(45deg);
         transition: var(--transition-1);
     }
+
+    .hero .slider-btn ion-icon { transform: rotate(-45deg); }
+
+    .hero .slider-btn.prev { left: 30px; }
+
+    .hero .slider-btn.next { right: 30px; }
+
+    .hero .slider-btn:is(:hover, :focus-visible) {
+        background-color: var(--gold-crayola);
+        color: var(--black);
+    }
+
+
+
+    /**
+     * RESERVATION
+     */
+
+    .reservation .input-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
 }
