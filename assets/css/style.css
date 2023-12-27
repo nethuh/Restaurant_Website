@@ -1306,7 +1306,7 @@ body.nav-active {
 \*-----------------------------------*/
 
 .reservation-form {
-    margin-block-end: -270px;
+    margin-block-start: -270px;
 }
 
 .form-text {
@@ -2244,5 +2244,79 @@ textarea.input-field {
 
     .features .grid-list { grid-template-columns: repeat(4, 1fr); }
 
+
+}
+
+
+/**
+ * responsive for larger than 1400px screen
+ */
+
+@media (min-width: 1400px) {
+
+    /**
+     * HEADER
+     */
+
+    .navbar { margin-inline: auto; }
+
+
+
+    /**
+     * ABOUT
+     */
+
+    .about-content { padding-inline-end: 90px; }
+
+    .about .shape {
+        display: block;
+        top: 46%;
+        left: 0;
+    }
+
+
+
+    /**
+     * SPECIAL DISH
+     */
+
+    .special-dish {
+        overflow: visible;
+        position: relative;
+    }
+
+    .special-dish .shape {
+        display: block;
+        right: 0;
+        z-index: 1;
+    }
+
+    .special-dish .shape-1 { top: 45%; }
+
+    .special-dish .shape-2 {
+        bottom: 0;
+        transform: translateY(50%);
+        width: max-content;
+    }
+
+
+
+    /**
+     * FEATURES
+     */
+
+    .features { overflow: visible; }
+
+    .features .shape { display: block; }
+
+    .features .shape-1 {
+        top: -100px;
+        right: 0;
+    }
+
+    .features .shape-2 {
+        bottom: 80px;
+        left: 0;
+    }
 
 }
