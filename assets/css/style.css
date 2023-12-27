@@ -1967,4 +1967,43 @@ textarea.input-field {
         right: 0;
     }
 
+    /**
+  * ABOUT
+  */
+
+    .about .container {
+        grid-template-columns: 0.7fr 1fr;
+        gap: 30px;
+    }
+
+
+
+    /**
+     * SPECIAL DISH
+     */
+
+    .special-dish {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .special-dish-content { padding-inline: 50px 25px; }
+
+    .special-dish-content .container { position: relative; }
+
+    .special-dish .section-subtitle::after,
+    .special-dish .btn { margin-inline: 0; }
+
+    .special-dish-content .wrapper { justify-content: flex-start; }
+
+    .special-dish .abs-img {
+        position: absolute;
+        top: 10px;
+        left: -40px;
+        animation: move 5s linear infinite;
+    }
+
+
+
 }
