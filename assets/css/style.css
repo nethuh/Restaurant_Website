@@ -2064,3 +2064,122 @@ textarea.input-field {
 
     .footer-list:last-child { order: 2; }
 }
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+    /**
+     * CUSTOM PROPERTY
+     */
+    :root {
+
+        /**
+         * typography
+         */
+
+        --fontSize-title-2: 2.5rem;
+
+    }
+
+
+    /**
+     * REUSED STYLE
+     */
+    .container,
+    :is(.service, .event) .container {
+        max-width: 1200px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+
+    /**
+     * TOPBAR
+     */
+    .topbar .container {
+        max-width: unset;
+    }
+
+    .topbar .separator {
+        display: block;
+    }
+
+
+    /**
+     * HEADER
+     */
+    .nav-open-btn,
+    .navbar > *:not(.navbar-list),
+    .header .overlay {
+        display: none;
+    }
+
+    .header .container {
+        max-width: unset;
+    }
+
+    .navbar,
+    .navbar.active,
+    .navbar-list {
+        all: unset;
+    }
+
+    .navbar,
+    .navbar.active {
+        margin-inline: auto 20px;
+    }
+
+    .navbar-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    .navbar-item {
+        border-block-start: none;
+    }
+
+    .navbar .separator {
+        display: none;
+    }
+
+    .navbar-link:is(:hover, :focus-visible, .active) .span {
+        transform: unset;
+    }
+
+    .navbar-link {
+        font-weight: var(--weight-bold);
+        letter-spacing: var(--letterSpacing-1);
+    }
+
+    .navbar-link::after {
+        display: block;
+    }
+
+    .navbar-link.active::after {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    .header .btn {
+        margin-inline-start: 0;
+    }
+
+
+    /**
+     * HERO
+     */
+    .hero {
+        height: 880px;
+    }
+
+    .hero-btn {
+        bottom: 50px;
+        right: 50px;
+        transform: scale(1);
+    }
+
+
+}
